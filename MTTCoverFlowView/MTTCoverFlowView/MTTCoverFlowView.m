@@ -77,7 +77,7 @@
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView{
     
-    return MaxSections;
+    return 1;
 }
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section{
@@ -100,10 +100,11 @@
 //定义每个Section的四边间距
 -(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
 {
-    CGFloat width = ((collectionView.frame.size.width - 280)-(10*2))/2;
-    
+    CGFloat width = ((collectionView.frame.size.width - 200)-(20*2))/2;
+    return UIEdgeInsetsMake(0, width + 20, 0, width + 20);//分别为上、左、下、右
+#if 0
     if (section == 0) {
-        return UIEdgeInsetsMake(0, width + 10, 0, 0);//分别为上、左、下、右
+        return UIEdgeInsetsMake(0, width + 10, 0, width + 10);//分别为上、左、下、右
     }
     else if(section == (MaxSections - 1)){
         return UIEdgeInsetsMake(0, 0, 0, width + 10);//分别为上、左、下、右
@@ -111,6 +112,7 @@
     else{
         return UIEdgeInsetsMake(0, 10, 0, 0);//分别为上、左、下、右
     }
+#endif
 }
 
 

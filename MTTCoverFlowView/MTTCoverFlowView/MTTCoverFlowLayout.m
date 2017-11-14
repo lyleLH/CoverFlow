@@ -7,7 +7,7 @@
 //
 
 #import "MTTCoverFlowLayout.h"
-#define kPageCardWidth 280
+#define kPageCardWidth 200
 #define kLineSpace 10
 #define kPageCardHeight 160
 
@@ -49,12 +49,11 @@
         // 同样，超过中心后，越往左、右走，缩放就越大，显示就越小
         CGFloat scaleForDistance = distance / self.itemSize.width;
         // 0.1可调整，值越大，显示就越大
-        CGFloat scaleForCell = 1 + 0.1 * (1 - fabs(scaleForDistance));
+        CGFloat scaleForCell = 1 + 0.2 * (1 - fabs(scaleForDistance));
         
         //只在Y轴方向做缩放
         attribute.transform3D =  CATransform3DMakeScale(1, scaleForCell, 1);
-        attribute.zIndex = 1;
-        
+        attribute.zIndex = 0;
         //渐变
         CGFloat scaleForAlpha = 1 - fabsf(scaleForDistance)*0.6;
         attribute.alpha = scaleForAlpha;

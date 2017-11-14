@@ -23,7 +23,7 @@
     // Do any additional setup after loading the view, typically from a nib.
     MTTCoverFlowView * coverFlow = [[MTTCoverFlowView alloc] initWithFrame:self.backgroundView.bounds];
     
-    [coverFlow reloadCollectionViewData:[NSMutableArray arrayWithArray:@[@0,@1,@2,@3,@4,@5,@6,@7]]];
+    [coverFlow reloadCollectionViewData:[NSMutableArray arrayWithArray:@[@0,@1,@2]]];
     
     coverFlow.scrollEndedIndex = ^(NSInteger integer) {
         
