@@ -13,6 +13,12 @@
 		C5153E4A1FBA8EB4008FEA0B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5153E491FBA8EB4008FEA0B /* Assets.xcassets */; };
 		C5153E4D1FBA8EB4008FEA0B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5153E4B1FBA8EB4008FEA0B /* LaunchScreen.storyboard */; };
 		C5153E501FBA8EB4008FEA0B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C5153E4F1FBA8EB4008FEA0B /* main.m */; };
+		C5153E591FBA8F14008FEA0B /* MTTCoverFlowCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5153E581FBA8F14008FEA0B /* MTTCoverFlowCollectionView.m */; };
+		C5153E5C1FBA995D008FEA0B /* MTTCoverFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C5153E5B1FBA995D008FEA0B /* MTTCoverFlowLayout.m */; };
+		C5153E601FBABCA9008FEA0B /* MTTCoverFlowCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C5153E5E1FBABCA9008FEA0B /* MTTCoverFlowCell.m */; };
+		C5153E611FBABCA9008FEA0B /* MTTCoverFlowCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C5153E5F1FBABCA9008FEA0B /* MTTCoverFlowCell.xib */; };
+		C5153E641FBABD4E008FEA0B /* MTTCoverFlowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C5153E631FBABD4E008FEA0B /* MTTCoverFlowView.m */; };
+		C5153E671FBAC097008FEA0B /* UIColor+MTTCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = C5153E651FBAC097008FEA0B /* UIColor+MTTCategory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +32,17 @@
 		C5153E4C1FBA8EB4008FEA0B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C5153E4E1FBA8EB4008FEA0B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C5153E4F1FBA8EB4008FEA0B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C5153E571FBA8F14008FEA0B /* MTTCoverFlowCollectionView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTCoverFlowCollectionView.h; sourceTree = "<group>"; };
+		C5153E581FBA8F14008FEA0B /* MTTCoverFlowCollectionView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTCoverFlowCollectionView.m; sourceTree = "<group>"; };
+		C5153E5A1FBA995D008FEA0B /* MTTCoverFlowLayout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTCoverFlowLayout.h; sourceTree = "<group>"; };
+		C5153E5B1FBA995D008FEA0B /* MTTCoverFlowLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTCoverFlowLayout.m; sourceTree = "<group>"; };
+		C5153E5D1FBABCA9008FEA0B /* MTTCoverFlowCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTCoverFlowCell.h; sourceTree = "<group>"; };
+		C5153E5E1FBABCA9008FEA0B /* MTTCoverFlowCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTCoverFlowCell.m; sourceTree = "<group>"; };
+		C5153E5F1FBABCA9008FEA0B /* MTTCoverFlowCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MTTCoverFlowCell.xib; sourceTree = "<group>"; };
+		C5153E621FBABD4E008FEA0B /* MTTCoverFlowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MTTCoverFlowView.h; sourceTree = "<group>"; };
+		C5153E631FBABD4E008FEA0B /* MTTCoverFlowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MTTCoverFlowView.m; sourceTree = "<group>"; };
+		C5153E651FBAC097008FEA0B /* UIColor+MTTCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+MTTCategory.m"; sourceTree = "<group>"; };
+		C5153E661FBAC097008FEA0B /* UIColor+MTTCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+MTTCategory.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +75,7 @@
 		C5153E3F1FBA8EB4008FEA0B /* MTTCoverFlowView */ = {
 			isa = PBXGroup;
 			children = (
+				C5153E561FBA8EE7008FEA0B /* MTTCoverFlowView */,
 				C5153E401FBA8EB4008FEA0B /* AppDelegate.h */,
 				C5153E411FBA8EB4008FEA0B /* AppDelegate.m */,
 				C5153E431FBA8EB4008FEA0B /* ViewController.h */,
@@ -67,6 +85,24 @@
 				C5153E4B1FBA8EB4008FEA0B /* LaunchScreen.storyboard */,
 				C5153E4E1FBA8EB4008FEA0B /* Info.plist */,
 				C5153E4F1FBA8EB4008FEA0B /* main.m */,
+			);
+			path = MTTCoverFlowView;
+			sourceTree = "<group>";
+		};
+		C5153E561FBA8EE7008FEA0B /* MTTCoverFlowView */ = {
+			isa = PBXGroup;
+			children = (
+				C5153E661FBAC097008FEA0B /* UIColor+MTTCategory.h */,
+				C5153E651FBAC097008FEA0B /* UIColor+MTTCategory.m */,
+				C5153E621FBABD4E008FEA0B /* MTTCoverFlowView.h */,
+				C5153E631FBABD4E008FEA0B /* MTTCoverFlowView.m */,
+				C5153E571FBA8F14008FEA0B /* MTTCoverFlowCollectionView.h */,
+				C5153E581FBA8F14008FEA0B /* MTTCoverFlowCollectionView.m */,
+				C5153E5A1FBA995D008FEA0B /* MTTCoverFlowLayout.h */,
+				C5153E5B1FBA995D008FEA0B /* MTTCoverFlowLayout.m */,
+				C5153E5D1FBABCA9008FEA0B /* MTTCoverFlowCell.h */,
+				C5153E5E1FBABCA9008FEA0B /* MTTCoverFlowCell.m */,
+				C5153E5F1FBABCA9008FEA0B /* MTTCoverFlowCell.xib */,
 			);
 			path = MTTCoverFlowView;
 			sourceTree = "<group>";
@@ -130,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5153E4D1FBA8EB4008FEA0B /* LaunchScreen.storyboard in Resources */,
+				C5153E611FBABCA9008FEA0B /* MTTCoverFlowCell.xib in Resources */,
 				C5153E4A1FBA8EB4008FEA0B /* Assets.xcassets in Resources */,
 				C5153E481FBA8EB4008FEA0B /* Main.storyboard in Resources */,
 			);
@@ -143,7 +180,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C5153E451FBA8EB4008FEA0B /* ViewController.m in Sources */,
+				C5153E601FBABCA9008FEA0B /* MTTCoverFlowCell.m in Sources */,
 				C5153E501FBA8EB4008FEA0B /* main.m in Sources */,
+				C5153E671FBAC097008FEA0B /* UIColor+MTTCategory.m in Sources */,
+				C5153E641FBABD4E008FEA0B /* MTTCoverFlowView.m in Sources */,
+				C5153E5C1FBA995D008FEA0B /* MTTCoverFlowLayout.m in Sources */,
+				C5153E591FBA8F14008FEA0B /* MTTCoverFlowCollectionView.m in Sources */,
 				C5153E421FBA8EB4008FEA0B /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
